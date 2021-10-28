@@ -409,7 +409,13 @@ img {
   padding: 18px 30px 14px 30px;
   cursor: pointer;
   margin-top: 50px;
+  transition: all 0.6s ease;
 }
+.btn-about:hover {
+  background-color: grey;
+  border: 2px solid grey;
+}
+
 .block-down {
   margin-top: 70px;
   display: flex;
