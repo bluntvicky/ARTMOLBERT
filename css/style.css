@@ -45,6 +45,7 @@ ul {
   font-size: 18px;
   line-height: 18px;
 }
+
 .search-form {
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -147,6 +148,7 @@ ul {
   font-size: 144px;
   line-height: 144px;
   margin: 0;
+  z-index: 1900;
 }
 img {
   height: 100%;
@@ -154,7 +156,7 @@ img {
 }
 .walley {
   position: absolute;
-  top: 264px;
+  bottom: 0;
   left: 0;
   max-height: 510px;
   max-width: 332px;
@@ -164,7 +166,7 @@ img {
 }
 .holst {
   position: absolute;
-  left: 553px;
+  left: 41%;
   top: 0;
   max-width: 340px;
   max-height: 192px;
@@ -182,15 +184,15 @@ img {
 .flowers {
   position: absolute;
   top: 452px;
-  left: 607px;
+  left: 45.3%;
   max-width: 288px;
   max-height: 158px;
   object-fit: cover;
 }
 .btn-buy {
   position: absolute;
-  left: 691px;
-  top: 378px;
+  left: 51.5%;
+  top: 48%;
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -295,6 +297,7 @@ img {
 .sections-item {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .section-card {
   display: flex;
@@ -306,21 +309,21 @@ img {
   max-height: 286px;
   max-width: 325px;
 }
-.chair {
+.painting-img {
   max-width: 350px;
   max-height: 280px;
   object-fit: cover;
   border: 1px solid #e8e8e8;
   padding: 40px 23px;
 }
-.chair2 {
+.graphics-img {
   max-width: 350px;
   max-height: 280px;
   object-fit: cover;
   border: 1px solid #e8e8e8;
   padding: 20px 40px;
 }
-.chair3 {
+.photo-img {
   max-width: 350px;
   max-height: 280px;
   object-fit: cover;
