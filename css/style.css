@@ -193,16 +193,18 @@ img {
   position: absolute;
   left: 51.5%;
   top: 48%;
+  padding: 21px 72px;
+}
+.btn-def {
   text-decoration: none;
   color: black;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
   border: 2px solid #000000;
-  padding: 21px 72px;
   transition: all 0.6s ease;
 }
-.btn-buy:hover {
+.btn-def:hover {
   background-color: black;
   color: white;
 }
@@ -278,7 +280,7 @@ img {
 .sections {
   position: relative;
   margin-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 .normal-title {
   font-weight: 900;
@@ -316,7 +318,7 @@ img {
   width: 100%;
   max-height: 286px;
   max-width: 325px;
-  padding-bottom: 60px;
+  margin-bottom: 30px;
 }
 .painting-img {
   max-width: 350px;
@@ -361,4 +363,98 @@ img {
   transform: scale(1.2);
   filter: blur(0);
   border: none;
+}
+.more-btn-block {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.btn-more {
+  padding: 21px 72px;
+}
+.title-about {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 195px;
+  text-align: start;
+}
+.spacing-about {
+  margin-right: 15px;
+}
+.block-features {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px;
+}
+.block-about-us {
+  padding-bottom: 100px;
+}
+.about-fearutes {
+  position: relative;
+  width: 100%;
+  margin: 0 30px;
+}
+.block-upper {
+  max-width: 372px;
+  margin-left: 100px;
+}
+.feature-title {
+  font-size: 18px;
+  line-height: 145.23%;
+  margin-top: 50px;
+}
+.btn-about {
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 18px 30px 14px 30px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.block-down {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.mini-block {
+  width: 100%;
+  max-width: 290px;
+  margin-bottom: 70px;
+}
+.numbers {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.small-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+.mini-block sub {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+}
+.about-img {
+  max-width: 288px;
+  max-height: 288px;
+  object-fit: cover;
+}
+.about1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about2 {
+  position: absolute;
+  right: 25%;
+  top: 28%;
+}
+.about3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
 }

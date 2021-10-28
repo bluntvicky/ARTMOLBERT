@@ -1,6 +1,7 @@
 const swiper = new Swiper('.swiper', {
   speed: 900,
   resistanceRatio: 1.6,
+  spacebetween: 600,
   // Optional parameters
   direction: 'horizontal',
   loop: true,
