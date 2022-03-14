@@ -17,7 +17,7 @@
     <div class="header container m50">
         <div class="header-menu">
         <ul class="main-nav">
-            <li class="title-nav"><a href="#" class="art-nav">Искусство</a></li>
+            <li class="title-nav"><a href="#sections" onclick="slowScroll('#sections')" class="art-nav">Искусство</a></li>
             <li class="title-nav"><a href="#" class="aurhor-nav">Авторы</a></li>
             <li class="title-nav"><a href="#" class="collection-nav">Коллекция</a></li>
             <li class="title-nav"><a href="#" class="gifts-nav">Подарки</a></li>
@@ -128,32 +128,6 @@
     </svg>
 </button>
 </div>
-<ul class="nav-icons">
-    <li class="nav-icon"><a href="#" class="favorite"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M11.8 19.6C11.6 19.6 11.3 19.5 11.1 19.4C8.49998 18 -0.200026 13.1 -2.55967e-05 6.8C-2.55967e-05 6.7 -2.55967e-05 6.6 -2.55967e-05 6.6V6.4C-2.55967e-05 2.9 2.89997 0 6.39997 0H6.49997H6.69997C8.69997 0 10.6 0.9 11.8 2.5C13 0.9 14.9 0 16.9 0H17.1H17.2C20.7 0 23.6 2.9 23.6 6.4V6.6C23.6 6.7 23.6 6.8 23.6 6.8C23.8 13.2 14.4 18.4 12.5 19.4C12.3 19.5 12 19.6 11.8 19.6ZM6.49997 2C3.99997 2 1.99997 4 1.99997 6.4V6.5C1.99997 6.6 1.99997 6.8 1.99997 6.9C1.79997 11.9 9.99997 16.5 11.8 17.5C13.6 16.5 21.8 11.9 21.6 6.9C21.6 6.8 21.6 6.7 21.6 6.5V6.4C21.6 4 19.6 2 17.2 2H16.9C15.1 2 13.4 3.1 12.7 4.8L11.8 7L10.9 4.8C10.2 3.1 8.49997 2 6.69997 2H6.49997Z"
-            fill="black" />
-    </svg>
-</a></li>
-<li class="nav-icon"><a href="#" class="login button_auth"><svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-        d="M10.5 12.6C7.05601 12.6 4.20001 9.744 4.20001 6.3C4.20001 2.856 7.05601 0 10.5 0C13.944 0 16.8 2.856 16.8 6.3C16.8 9.744 13.944 12.6 10.5 12.6ZM10.5 1.68C7.98001 1.68 5.88001 3.78 5.88001 6.3C5.88001 8.82 7.98001 10.92 10.5 10.92C13.02 10.92 15.12 8.82 15.12 6.3C15.12 3.78 13.02 1.68 10.5 1.68Z"
-        fill="black" />
-    <path
-        d="M21 21.4199H19.32C19.32 16.5479 15.372 12.5999 10.5 12.5999C5.628 12.5999 1.68 16.5479 1.68 21.4199H0C0 15.6239 4.704 10.9199 10.5 10.9199C16.296 10.9199 21 15.6239 21 21.4199Z"
-        fill="black" />
-</svg>
-</a></li>
-<li class="nav-icon"><a href="#" class="basket"><svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-        d="M18.2357 23.0002H0L1.39643 4.92871H16.9214L18.2357 23.0002ZM1.80714 21.3573H16.4286L15.3607 6.57157H2.875L1.80714 21.3573Z"
-        fill="black" />
-    <path
-        d="M14.8679 5.75H13.225C13.225 3.45 11.4179 1.64286 9.11786 1.64286C6.81786 1.64286 5.01072 3.45 5.01072 5.75H3.36786C3.36786 2.54643 5.91429 0 9.11786 0C12.3214 0 14.8679 2.54643 14.8679 5.75Z"
-        fill="black" />
-</svg>
-</a></li>
-</ul>
     </div>
     <div class="footer-promo">
         <span class="sales">Скидки на зимний сезон:</span>
@@ -286,35 +260,43 @@
     </div>
     </div>
 </div>
-        <div class="modal-auth">
-        <div class="modal-dialog modal-dialog-auth">
-            <button class="close-auth">&times;</button>
-            <form id="logInForm">
-                <fieldset class="modal-body">
-                    <legend class="modal-title">Авторизация</legend>
-                    <label class="label-auth">
-                        <span>Логин</span>
-                        <input id="login" type="text">
-                    </label>
-                    <label class="label-auth">
-                        <span>Пароль</span>
-                        <input id="password" type="password">
-                    </label>
-                </fieldset>
-                <!-- /.modal-body -->
-                <div class="modal-footer">
-                    <div class="footer-buttons">
-                        <button class="button button-primary button-login" type="submit">Войти</button>
-                    </div>
+<div class="modal-auth">
+    <div class="modal-dialog modal-dialog-auth">
+        <button class="close-auth">&times;</button>
+        <form id="logInForm" class="logInBlock">
+            <fieldset class="modal-body">
+                <legend class="modal-title">Форма обратной связи</legend>
+                <label class="label-auth">
+                    <span>Имя</span>
+                    <input id="name" type="text">
+                </label>
+                <label class="label-auth">
+                    <span>Фамилия</span>
+                    <input id="surname" type="text">
+                </label>
+                <label class="label-auth">
+                    <span>E-mail</span>
+                    <input id="email" type="email">
+                </label>
+                <label class="label-auth">
+                    <span>Номер телефона</span>
+                    <input id="phone" type="number">
+                </label>
+            </fieldset>
+            <!-- /.modal-body -->
+            <div class="modal-footer">
+                <div class="footer-buttons">
+                    <button class="button button-primary button-login" type="submit">Отправить</button>
                 </div>
-            </form>
-            <!-- /.modal-footer -->
-        </div>
-        <!-- /.modal-dialog -->
+            </div>
+        </form>
+        <!-- /.modal-footer -->
     </div>
+    <!-- /.modal-dialog -->
+</div>
     </main>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/auth.js" defer></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="js/swiper.js" defer></script>
+        <script src="js/auth.js" defer></script>
 </body>
 </html>

@@ -1,9 +1,11 @@
 const modalAuth = document.querySelector('.modal-auth')
-const buttonAuth = document.querySelector('.button_auth')
+const buttonAuth = document.querySelector('.btn-buy')
 const closeAuth = document.querySelector('.close-auth')
 const logInForm = document.getElementById('logInForm')
-const inputLogin = document.getElementById('login')
-const inputPassword = document.getElementById('password')
+const inputName = document.getElementById('name')
+const inputSurname = document.getElementById('surname')
+const inputEmail = document.getElementById('email')
+const inputPhone = document.getElementById('phone')
 
 const login = (user) => {
     modalAuth.style.display = 'none'
@@ -19,16 +21,27 @@ closeAuth.addEventListener('click', () => {
 logInForm.addEventListener('submit', (event) => {
     event.preventDefault()
 
-     if(inputLogin.value == '') {
-        alert('Введите логин и пароль');
+     if(inputName.value == '') {
+        alert('Введите Имя');
         return false;
     }
-    if(inputPassword.value == '') {
-        alert('Введите пароль');
+    if(inputSurname.value == '') {
+        alert('Введите Фамилию');
+        return false;
+        }
+     if(inputEmail.value == '') {
+        alert('Введите почту');
+        return false;
+    }
+    if(inputPhone.value == '') {
+        alert('Введите номер телефона');
         return false;
     }
     const user = {
-        login: inputLogin.value,
-        password: inputPassword.value
+        name: inputName.value,
+        surname: inputSurname.value,
+        email: inputEmail.value,
+        phone: inputPhone.value
+
     }    
 })
